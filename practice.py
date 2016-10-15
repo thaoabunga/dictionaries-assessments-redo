@@ -118,6 +118,7 @@ def get_sum_zero_pairs(numbers):
 
 
 
+
 def top_chars(phrase):
     """Find most common character(s) in string.
 
@@ -143,11 +144,19 @@ def top_chars(phrase):
 
     """
     chars_count = {} #empty dictionary to append chars to
+    top_count = 0
+    winner = None
 
     for letter in phrase: #looping through each char in phrase list
-        chars_count[letter] = chars_count.get(letter, 0) + 1 #counting the letters
-        if chars_count
-    return sorted(chars_count)
+        if letter != " ":
+            chars_count[letter] = chars_count.get(letter, 0) + 1 #counting the letters
+    for key, value in chars_count:
+        if value > top_count:
+            winner = key
+
+
+
+    return winner
 
 #####################################################################
 # You can ignore everything below this.

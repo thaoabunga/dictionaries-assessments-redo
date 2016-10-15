@@ -185,12 +185,12 @@ def kids_game(names):
     good solutions here will definitely require a dictionary.
     """
 
-    possible_words = {}
+    # possible_words = {}
 
-    results = []
+    # results = []
 
-    for name in names:
-    return []
+    # for name in names:
+    # return []
 
 #####################################################################
 # You can ignore everything below this.
